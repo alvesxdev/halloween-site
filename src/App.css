@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500;600&family=Inter&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-texts-site);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-purple);
+  background-image: url(./assets/bg-teia.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: var(--font-h);
+}
+
+@font-face {
+  font-family: 'halloween-font';
+  src: url(./fonts/font-halloween/ScaryHalloweenFont.ttf)
+}
+
+:root {
+  --bg-purple: #000002;
+  --bg-purple2: #030005;
+
+  /* // COLORS TEXTS SITE // */
+
+  --color-texts-site: rgb(249, 249, 249);
+
+  /* // FONTS SITE // */
+
+  --font-roboto: 'Roboto';
+  --font-h: 'halloween-font';
+  --font-asap: 'Asap';
+  --font-inter: 'Inter';
+
+  /* // COLORS BUTTONS SITE // */
+
+  --btn-orange: #F59500;
+
+  /* // COLORS FONTS // */
+
+  --color-font-orange: #F59500; 
+  --color-font-brown: #1F140D;
+
+  /* // COLORS CARDS // */
+
+  --color-card: #20003C;
+
+}
+

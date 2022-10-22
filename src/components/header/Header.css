@@ -1,0 +1,152 @@
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+}
+
+header.black {
+    background-color: var(--bg-purple);
+    transition: all ease .7s;
+}
+
+.header--logo {
+    cursor: pointer;
+}
+
+.content--header {
+    width: 70%;
+    max-width: 1440px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s;
+}
+
+.content--header a {
+
+    font-family: var(--font-roboto);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.content--header nav {
+   display: none;
+}
+
+.content--header  nav.on {
+    align-items: center;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    top: 0;
+    right: 0;
+    background-color: rgba(21, 0, 34, 0.302);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    display: block;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+    border-right: 10px solid rgb(58, 1, 150);
+}
+
+.content--header nav.on .ul--header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+.content--header nav.on .ul--header a{
+    transition: .7s;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+}
+
+.content--header nav.on .ul--header a:hover {
+    padding: 8px 15px;
+    color: var(--color-font-brown);
+    border-radius: 50px;
+    background-color: var(--btn-orange);
+}
+
+.btn--Loginheader {
+    background-color: var(--btn-orange);
+    padding: 8px 30px;
+    border-radius: 50px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn--Loginheader:hover {
+    opacity: .8;
+}
+
+.icon {
+    cursor: pointer;
+    position: absolute;
+    right: 15%;
+    top: 25px;
+    z-index: 999;
+    width: 40px;
+}
+
+.iconDisable {
+    display: none;
+}
+
+.icon img {
+    width: 100%;
+    transition: all .5s;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+.iconClose {
+    display: none;
+}
+
+.iconActive {
+    z-index: 100;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.iconActive:hover {
+    transform: rotate(180deg);
+}
+
+@media(max-width: 760px) {
+    .content--header  nav.on {
+        width: 50vw;
+    }
+}
+
+@media(max-width: 480px) {
+    .content--header  nav.on {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 600px) {
+    .header--logo {
+        width: 65%;
+        margin-top: 15px;
+    }
+
+    .header--logo img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,64 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    background: var(--color-card);
+    width: 232px;
+    height: 352px;
+    border-radius: 25px;
+    transition: all ease .6s;
+}
+
+.card:hover {
+    transform: translateY(-10%);
+}
+
+.text--card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.text--card .h1--card {
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.text--card p {
+    text-align: center;
+    font-family: var(--font-inter);
+}
+
+.text--card .ul--card {
+    display: flex;
+    flex-direction: column;
+    gap: -20px;
+    font-family: var(--font-inter);
+}
+
+.btn--card {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn--card a {
+    text-decoration: none;
+    font-family: var(--font-roboto);
+    font-weight: 600;
+    color: var(--color-font-brown);
+    font-size: 1.2rem;
+}
+
+.btn--card:hover {
+    opacity: .8;
+}
+
+.btn--card a {
+    padding: 9px 31px;
+    background-color: var(--btn-orange);
+    border-radius: 50px;
+}

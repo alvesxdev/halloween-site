@@ -1,0 +1,78 @@
+.section--newsletter {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content--newsletter {
+    width: 70%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.content--newsletter .h1--newsletter {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.content--newsletter form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 75px;
+}
+
+
+
+.fields input {
+    width: 100%;
+    padding: 25px 0;
+    background: none;
+    border: 3px solid var(--btn-orange);
+    border-radius: 24px;
+    outline: none;
+
+    padding-left: 35px;
+    font-size: 1.2rem;
+}
+
+.fields input::placeholder {
+    font-size: 1.2rem;
+    color: #ffff
+}
+
+.btn--newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.btn--newsletter input {
+   background-color: var(--btn-orange);
+   padding: 20px 60px;
+   border: none;
+   border-radius: 24px;
+   font-size: 1.5rem;
+    font-family: var(--font-roboto);
+    color: var(--color-font-brown);
+   font-weight: 600;
+   transition: all .6s;
+   cursor: pointer;
+}
+
+.btn--newsletter input:hover {
+    opacity: .8;
+}
+
+.img--newsletter {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}

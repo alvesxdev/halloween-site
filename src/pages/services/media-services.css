@@ -1,0 +1,33 @@
+@media(max-width: 870px) {
+    .content--cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .section--services {
+        height: 180vh;
+    }
+}
+
+@media(max-width: 600px) {
+    .section--services .h1--services {
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-height: 750px) {
+    .section--services {
+        height: 200vh;
+    }
+}
+
+@media(max-height: 683px) {
+    .section--services {
+        height: 230vh;
+    }
+}
+
+@media(max-height: 610px) {
+    .section--services {
+        height: 250vh;
+    }
+}
